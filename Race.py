@@ -12,7 +12,6 @@ import sys
 
 class Race:
 # A race refers to an election for one particular position
-
 	def __init__(self, election, position, candidates, ballots):
 		self.election = election
 		self.position = position
@@ -22,7 +21,7 @@ class Race:
 		self.winners = 0
 		self.spentBallots = 0
 		self.iterationNumber = 0
-		
+
 		self.finished = False
 		self.current_ballots = ballots
 		self.redistribute_ballots = []
@@ -194,7 +193,7 @@ class Ballot:
 	def __init__(self, votes):
 		# Votes is a dictionary matching position to an array of candidate numbers.
 		# The position of the candidate number in the array refers to rank of the vote.
-		
+
 		# Check that all keys are valid
 		for position in votes.keys():
 			if position not in POSITIONS:
@@ -214,5 +213,5 @@ class Ballot:
 
 	def __str__(self):
 		return str(self.votes)
-	
+
 
