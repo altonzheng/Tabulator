@@ -3,7 +3,7 @@ By: Yun Park and Alton Zheng-Xie (2014)
 
 This is a GUI application used by the ASUC of UC Berkeley to tabulate votes.
 
-For questions or concerns, please email altonzheng@berkeley.edu or yunpark93@gmail.com.
+For questions or concerns, please email altonzheng@berkeley.edu or yun_park@berkeley.edu
 
 # To Build:
 Prerequisites:
@@ -18,10 +18,8 @@ python ElectionApp.py
 `
 
 # How to Use
-1.	Load ballots in proper json format (use election_parser_json if needed)
-2.	Load candidates in proper json format
-3.	Choose speed / position (to tally)
+1.	Load ballots.json (found in /input_data)
+2.	Load candidates.json (found in /input_data)
+3.	Choose speed / position of tabulation
 4. 	Click redistribute to run one step of current race OR click complete to complete the current race
 
-Note:
-Sample data is provided from the 2014 ASUC Elections in the input_data folder.
